@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Lawliet's studio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="php/uporabnik.php" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0" >
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">Lawliet's studio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Events</a></li>
+                             <!-- toti portfolio, bo nardila kot karte recimo, za določene artiste,da jih bo poiskalo pol pa bos to ven vrgla-->
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <form name="odjava" aciton="php/odjava.php">
+                            <a class="nav-icon position-relative text-decoration-none" title="Odjava"  href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-door-open" viewBox="0 0 16 16">
+                                    <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
+                                    <path
+                                        d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
+                                </svg>
+                                <span
+                                    class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                            </a>
+                        </form>
+                      
+                </div>
+                    <div class="box">
+                        <input type="text" placeholder="Search...">
+                        
+                        <a href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </div>
+                    
+            </nav>
+            <!-- Header-->
+            <!-- Team members section-->
+            <section class="py-5 bg-light">
+                <div class="container px-5 my-5">
+                   
+                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                        <img class="img-fluid rounded-circle mb-4 px-4" width="50%" src="assets/user.jpg"  />
+                                        <form action="php/uporabnik.php" method="POST" enctype="multipart/form-data">
+                                           <input type="file" name="file">
+                                            <button type="submit" name="submit">Upload</button>
+                        
+                                        </form>
+                                        <h5 class="fw-bolder" name="email"></h5>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+               
+            </section>
+            <!-- About section one
+            <section class="py-5 bg-light" id="scroll-target">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="" alt="tu not bo slika ticketa" /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder">Tu not more izpisat keri ticket je bil kupljen, in case ce si prijavljen</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+           
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Lawliet's studio 2022</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#">Contact</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#">About</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+     </body>
+</html>
