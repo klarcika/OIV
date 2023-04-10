@@ -39,12 +39,13 @@ if (isset($_POST["potrdi"])) {
        
         //echo  password_verify($_POST['geslo'] . $user['salt'], $user['geslo']);
         // Check if user exists and password is correct
+   
         if ( password_verify($_POST['geslo'] . $user['salt'], $user['geslo'])) {
             echo "Login successful!";
-           // header( 'Location:\OIV\naloga3\uporabnik.html');
+            header( 'Location:\OIV\naloga3\uporabnik.html');
         } else {
             echo " Incorrect username or password.";
-           // header( 'Location:\OIV\naloga3\vpis.html');
+            header( 'Location:\OIV\naloga3\vpis.html');
         }
     }
 }

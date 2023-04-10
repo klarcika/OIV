@@ -59,7 +59,7 @@
 			// ID NAZADNJE VSTAVLJENE VRSTICE
 			$idVstavljeneVrstice = $povezava->lastInsertId();
 			//echo $geslo;
-            echo '<h5 class="display-5 fw-bolder text-white mb-2">Sucessful registration</h5>';
+            echo $hashed_password . " to je hashed password " . $salt . " to je  salt";
 			header( 'Location:\OIV\naloga3\uporabnik.html' );
 
 }
